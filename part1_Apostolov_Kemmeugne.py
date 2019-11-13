@@ -314,15 +314,15 @@ def checkSomeValues(start, end):
         hidden_layer = relu(z)
         scores = compute(hidden_layer,W_out,b_out)
         probs = softmax(scores)
-        print("Prediction : ", probs)
+#        print("Prediction : ", probs)
         x=np.array(['A','B','C','D','E','F','G','H','I','J'])
         print("Predicted value :", x[np.argmax(probs)])
         print("Real value : ", x[trainTarget[i]])
 
-getDataExercise13()
+#getDataExercise13()
 #getDataExercise14()
 
 #plotExercise13()
 #plotExercise14()
 
-#checkSomeValues()
+#checkSomeValues(10,20)
